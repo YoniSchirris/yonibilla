@@ -62,8 +62,8 @@
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: inherit;
 }
@@ -87,6 +87,20 @@
   width: 0;
   height: 0;
   border-style: solid;
+}
+
+.year-of-feature-uneven{
+  font-family: MiloWeb-Medium;
+  color: #03566a;
+  margin-left: 45px;
+  font-size: 45px;
+}
+
+.year-of-feature-even{
+  font-family: MiloWeb-Medium;
+  color: #03566a;
+  margin-left: -120px;
+  font-size: 45px;
 }
 
 // For the odd elements
@@ -126,8 +140,12 @@
 
 // the final state of the button on the line
 .timeline ul li.in-view::after {
-  background: #F45B69;
+  background-color: #03566a;
+  background-repeat: no-repeat;
+  border: 1px solid inherit;
+
 }
+
 
 .timeline ul li div {
   visibility: hidden;
@@ -170,7 +188,7 @@
   }
 
   .timeline ul li div {
-    width: calc(100vw - 91px);
+    width: calc(100vw - 150px);
   }
 
   .timeline ul li:nth-child(even) div {
@@ -180,8 +198,14 @@
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
+    border-color: transparent #00d1e7 transparent transparent;
   }
+
+  .year-of-feature-even{
+    margin-left: 45px;
+  }
+
+
 }
 
 
@@ -189,9 +213,21 @@
 // Container of the CTA
 
 .call-to-action{
+  padding: 60px;
+  font-family: MiloWeb, sans-serif;
   background: #03566a;
-  height: 500px
-
-
-
 }
+
+
+//
+//.cta-container {
+//  position: relative;
+//  margin-left: 20%;
+//  width: 60%;
+//  margin-top: 100px;
+//  background-color: white;
+//  padding: 15px;
+//  border-radius: 12px;
+//  box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2), 1px 12px 40px 1px rgba(0, 0, 0, 0.19);
+//
+//}
