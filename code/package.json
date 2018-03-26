@@ -1,0 +1,27 @@
+{
+  "name": "usabilla-product-growth",
+  "version": "1.0.0",
+  "description": "contains product growth landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoniSchirris/yonibilla.git"
+  },
+  "author": "Yoni Schirris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoniSchirris/yonibilla/issues"
+  },
+  "homepage": "https://github.com/YoniSchirris/yonibilla#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
+  },
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
+}
