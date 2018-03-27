@@ -26,3 +26,4 @@ which processes the index.html, all (s)css, js, images, and fonts. It concatenat
 -Dist
 Is meant for production. It holds as little as possible, yet is fully functional.
 
+Would you like to test the page? Download all content, in your terminal run the gulp build command, and open code > dist > index.html in any browser, any device.
