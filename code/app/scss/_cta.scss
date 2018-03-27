@@ -1,0 +1,67 @@
+// Container of the CTA
+
+.call-to-action{
+  padding: 60px;
+  font-family: MiloWeb, sans-serif;
+  background: #03566a;
+}
+
+// usabilla's button design
+.btn-usabilla{
+  width: 100%;
+  font-family: MiloWeb-Medium,sans-serif;
+  font-size: 1.188rem;
+  line-height: 1.188rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding: .975rem 1.75rem .78rem;
+  margin: 0;
+  color: #6b6b6b;
+  background: #f9f9f9;
+  border-left: 0;
+  border-left-color: currentcolor;
+  border-right: 0;
+  border-right-color: currentcolor;
+  border-top: 0;
+  border-top-color: currentcolor;
+  border-bottom: .125rem solid #dfdfdf;
+  border-bottom-color: rgb(223, 223, 223);
+  border-radius: .188rem;
+  box-shadow: 0 .0625rem .125rem rgba(0,0,0,.15);
+  text-shadow: 0 .125rem #dfdfdf;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+// usabilla's blue button design
+.btn-usabilla-blue{
+
+  color: #fff;
+  background: #00a5c9;
+  box-shadow: 0 .0625rem .125rem rgba(0,138,171,.15);
+  border-color: #008aab;
+  text-shadow: 0 .125rem #008aab;
+}
+
+.future-feature{
+  padding: 10px;
+  padding-bottom: 20px;
+  font-family: MiloWeb;
+  color: #6b6b6b;
+  border: solid #00a5c9;
+  border-width: 1px;
+  border-radius: 12px;
+  box-shadow: 0.06rem 0.06rem 0.25rem #03566a ;
+  margin-bottom: 20px;
+
+
+  transform: scale(0.3, 0.3);
+  -ms-transform: scale(0.3, 0.3); /* IE 9 */
+  -webkit-transform: scale(0.3, 0.3); /* Safari and Chrome */
+  -o-transform: scale(0.3, 0.3); /* Opera */
+  -moz-transform: scale(0.3, 0.3); /* Firefox */
+}

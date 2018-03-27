@@ -1,0 +1,50 @@
+
+
+.future-feature.in-view{
+  transform: scale(1.0, 1.0);
+  -ms-transform: scale(1.0, 1.0); /* IE 9 */
+  -webkit-transform: scale(1.0, 1.0); /* Safari and Chrome */
+  -o-transform: scale(1.0, 1.0); /* Opera */
+  -moz-transform: scale(1.0, 1.0); /* Firefox */
+
+}
+
+.left-feature.in-view{
+  transition: transform 1s ease-in-out;
+  -ms-transition: transform 1s ease-in-out;
+  -webkit-transition: transform 2s ease-in-out;
+  -o-transition: transform 1s ease-in-out;
+  -moz-transition: transform 1s ease-in-out;
+}
+
+.right-feature.in-view{
+  transition: transform 1s ease-in-out 1s;
+  -ms-transition: transform 1s ease-in-out 1s;
+  -webkit-transition: transform 1s ease-in-out 1s;
+  -o-transition: transform 1s ease-in-out 1s;
+  -moz-transition: transform 1s ease-in-out 1s;
+}
+
+.year-of-future-feature{
+  font-family: MiloWeb-Medium;
+  color: #03566a;
+  font-size: 45px;
+}
+
+.near-future-image{
+  max-width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.image-container{
+
+  height: 100px;
+
+}
+
+.filler{
+
+  height: 50px;
+
+}

@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <title>Usabilla | Product Growth</title>
 
+    <!-- Add all necessary CSS files within the build tags below. Don't add CSS files that are retrieved online like
+    the bootstrap link below -->
+
+    <!--build:css css/styles.min.css-->
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!--endbuild-->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-    <!-- nice animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 </head>
 
 <body>
 
+
+
+<div class="alert alert-success alert-dismissible" id="successful-signup-message">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <p id="successfull-signup-text">We'll get in contact with you in the shortest possible amount of time</p>
+</div>
 
 <div class="container" style="height:100px";></div>
 
@@ -44,6 +52,7 @@
             </div>
             <div class="col-md-3"></div>
         </div>
+
     </div>
 </section>
 
@@ -91,6 +100,9 @@
     </div>
 </section>
 
+<!-- eo Timeline                        -->
+
+
 
 <!--<section class="call-to-action container-fluid">-->
     <!--<div class="container-fluid call-to-action">-->
@@ -109,25 +121,79 @@
     <!--</div>-->
 <!--</section>-->
 
+<div class="container">
+<div class="row filler"></div>
+</div>
+
+<!-- future products -->
+<section id="future-section" class="future-products mb-5 mt-5" >
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-lg-4">
+                <div class="container future-feature left-feature mb-md-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <h2 class="year-of-future-feature">2018</h2>
+                        </div>
+                        <div class="row image-container">
+                            <img class="near-future-image"src="images/analytics-reporting.svg">
+                        </div>
+                        <div class="row">
+                            <p class="feature-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2"></div>
+
+            <div class="col-lg-4">
+                <div class="container future-feature right-feature">
+                    <div class="col-12">
+                        <div class="row">
+                            <h2 class="year-of-future-feature">2020</h2>
+                        </div>
+                        <div class="row image-container">
+                            <img class="near-future-image"src="images/analytics-predict.svg">
+                        </div>
+                        <div class="row">
+                            <p class="feature-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-1"></div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- eo future products -->
+
 <!-- Subscribe -->
-<section class="call-to-action text-white text-center">
+<section class="call-to-action text-white text-center" id="cta-section">
     <div class="container">
         <div class="row">
             <div class="col-xl-9 mx-auto">
-                <h2 class="mb-4">Big call to action.</h2>
-                <h3 class="mb-4 mt-5">There is so much more to discover.</h3>
+                <img class="smiley mb-4" src="images/smile.png">
+                <h2 class="mb-4">Ready to grow your product with us?</h2>
+                <h4 class="mb-4 mt-5">Companies like the Economist, Philips, and Lufthansa have already preceded you. Get in touch today to benefit from your customer's insights tomorrow. </h4>
             </div>
             <div class="col-md-10 col-lg-10 col-xl-8 mx-auto mt-5">
                 <form>
                     <div class="form-row">
                         <div class="col-md-4 mb-2 mb-md-0">
-                            <input id="subscriber_name" type="text" class="form-control form-control-lg" placeholder="Thy name...">
+                            <input id="subscriber_name" type="text" class="form-control form-control-lg" placeholder="Thy name..." required>
                         </div>
                         <div class="col-md-4 mb-2 mb-md-0">
                             <input id="subscriber_email" type="email" class="form-control form-control-lg" placeholder="Enter your email...">
                         </div>
                         <div class="col-md-4">
-                            <button type="submit" class="btn btn-block btn-lg btn-primary" id="info-request";>Sign up!</button>
+                            <button type="button" class="btn-usabilla btn-usabilla-blue" id="info-request";>Request a demo</button>
 
                         </div>
                     </div>
@@ -136,17 +202,24 @@
         </div>
     </div>
 </section>
+<!-- eo Subscribe -->
 
 
 
-<!-- eo Timeline                        -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Place all your javascript files below in between the build tags, it automatically throws them in a single file and uglifies them  -->
+<!-- Don't, however, include the above "scripts", as they aren't actually files and I'm getting them online -->
+
+<!--build:js js/main.min.js -->
+<script src="js/script.js"></script>
+<!-- endbuild -->
+
 </body>
 
-<script src="js/script.js"></script>
 
 
 </html>
