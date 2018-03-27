@@ -5,7 +5,7 @@ This repository holds the code for a landing page developed for Usabilla as part
 Its folder structure is as follows
 readme.md (the file you have opened right now)
 code
- -app
+  -app
   -css
   -fonts
   -images
