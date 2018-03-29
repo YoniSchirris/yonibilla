@@ -1,4 +1,8 @@
-/* Everything for the timeline is below */
+/*
+Everything for the timeline is below
+source: https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528
+Though I added a few elements, obviously, to make it as wanted.
+ */
 
 
 .timeline ul li {
@@ -100,15 +104,14 @@
 }
 
 // the final state of the button on the line
+
+// Honestly wanted to add images instead of a full colour, but didn't manage to do so nicely :(
 .timeline ul li.in-view::after {
   background-color: #03566a;
   background-repeat: no-repeat;
   border: 1px solid inherit;
   box-shadow: 0.025rem 0.025rem 0.125rem #03566a ;
-
-
 }
-
 
 .timeline ul li div {
   visibility: hidden;
@@ -131,6 +134,9 @@
 }
 
 // Media queries for responsiveness
+
+// Here I could add a bunch of rules in order to make sure that there is never a horizontal scroll, as the
+// divs currently fall out of the page on certain screen sizes.
 
 // It's now responsive. The divs are smaller on small screens
 @media  screen and (max-width: 900px) {

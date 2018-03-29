@@ -1,3 +1,5 @@
+// source: https://css-tricks.com/gulp-for-beginners/
+
 var gulp = require('gulp');
 
 var sass = require('gulp-sass');
@@ -32,6 +34,7 @@ gulp.task('sass', function() {
         }))
 });
 
+// The watch task that's being run with "gulp watch" that updates the scss->css and reloads the browser
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
     gulp.watch('app/scss/**/*.scss', ['sass']);
@@ -40,11 +43,7 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
-// gulp.task('default', function (callback) {
-//     runSequence(['sass','browserSync', 'watch'],
-//         callback
-//     )
-// })
+// The browsersync function
 
 gulp.task('browserSync', function() {
     browserSync.init({
@@ -55,13 +54,8 @@ gulp.task('browserSync', function() {
 })
 
 
-gulp.task('useref', function(){
-    return gulp.src('app/*.html')
-        .pipe(useref())
-        // Minifies only if it's a JavaScript file
-        .pipe(gulpIf('*.js', uglify()))
-        .pipe(gulp.dest('dist'))
-});
+
+// Minifying JS and CSS and placing them in the dist folder
 
 gulp.task('useref', function(){
     return gulp.src('app/*.html')
@@ -72,6 +66,10 @@ gulp.task('useref', function(){
         .pipe(gulp.dest('dist'))
 });
 
+// image optimization and placing them in the dist folder. It saves the images in local cache, important
+// if you have many images and it could take some time
+
+
 gulp.task('images', function(){
     return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
@@ -81,14 +79,20 @@ gulp.task('images', function(){
         .pipe(gulp.dest('dist/images'))
 });
 
+// simply places the fonts in the dist folder
+
 gulp.task('fonts', function() {
     return gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
 })
 
+// cleans the dist folder, is run before filling it up with 'gulp build'
+
 gulp.task('clean:dist', function() {
     return del.sync('dist');
 })
+
+// Which is, obviously, why it's called a build tool
 
 gulp.task('build', function (callback) {
     runSequence('clean:dist',

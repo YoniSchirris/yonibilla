@@ -7,7 +7,7 @@
   src: url("../fonts/MiloWeb-Medium.woff"); }
 
 /* Some text mark-up is below */
-.product-growth-main-tile {
+.product-growth-main-title {
   font-family: MiloWeb-Medium,sans-serif;
   font-size: 40px;
   line-height: 48px;
@@ -30,7 +30,14 @@
 .head-text {
   width: 100%; }
 
-/* Everything for the timeline is below */
+.filler-100px {
+  height: 100px; }
+
+/*
+Everything for the timeline is below
+source: https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528
+Though I added a few elements, obviously, to make it as wanted.
+ */
 .timeline ul li {
   left: -20px;
   list-style-type: none;
@@ -145,6 +152,26 @@
   .year-of-feature-even {
     margin-left: 45px; } }
 
+.future-feature {
+  padding: 10px;
+  padding-bottom: 20px;
+  font-family: MiloWeb;
+  color: #6b6b6b;
+  border: solid #00a5c9;
+  border-width: 1px;
+  border-radius: 12px;
+  box-shadow: 0.06rem 0.06rem 0.25rem #03566a;
+  margin-bottom: 20px;
+  transform: scale(0.3, 0.3);
+  -ms-transform: scale(0.3, 0.3);
+  /* IE 9 */
+  -webkit-transform: scale(0.3, 0.3);
+  /* Safari and Chrome */
+  -o-transform: scale(0.3, 0.3);
+  /* Opera */
+  -moz-transform: scale(0.3, 0.3);
+  /* Firefox */ }
+
 .future-feature.in-view {
   transform: scale(1, 1);
   -ms-transform: scale(1, 1);
@@ -159,7 +186,7 @@
 .left-feature.in-view {
   transition: transform 1s ease-in-out;
   -ms-transition: transform 1s ease-in-out;
-  -webkit-transition: transform 2s ease-in-out;
+  -webkit-transition: transform 1s ease-in-out;
   -o-transition: transform 1s ease-in-out;
   -moz-transition: transform 1s ease-in-out; }
 
@@ -226,23 +253,3 @@
   box-shadow: 0 0.0625rem 0.125rem rgba(0, 138, 171, 0.15);
   border-color: #008aab;
   text-shadow: 0 .125rem #008aab; }
-
-.future-feature {
-  padding: 10px;
-  padding-bottom: 20px;
-  font-family: MiloWeb;
-  color: #6b6b6b;
-  border: solid #00a5c9;
-  border-width: 1px;
-  border-radius: 12px;
-  box-shadow: 0.06rem 0.06rem 0.25rem #03566a;
-  margin-bottom: 20px;
-  transform: scale(0.3, 0.3);
-  -ms-transform: scale(0.3, 0.3);
-  /* IE 9 */
-  -webkit-transform: scale(0.3, 0.3);
-  /* Safari and Chrome */
-  -o-transform: scale(0.3, 0.3);
-  /* Opera */
-  -moz-transform: scale(0.3, 0.3);
-  /* Firefox */ }

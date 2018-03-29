@@ -6,7 +6,7 @@
   background: #03566a;
 }
 
-// usabilla's button design
+// usabilla's button design, copy pasted from online CSS
 .btn-usabilla{
   width: 100%;
   font-family: MiloWeb-Medium,sans-serif;
@@ -47,21 +47,3 @@
   text-shadow: 0 .125rem #008aab;
 }
 
-.future-feature{
-  padding: 10px;
-  padding-bottom: 20px;
-  font-family: MiloWeb;
-  color: #6b6b6b;
-  border: solid #00a5c9;
-  border-width: 1px;
-  border-radius: 12px;
-  box-shadow: 0.06rem 0.06rem 0.25rem #03566a ;
-  margin-bottom: 20px;
-
-
-  transform: scale(0.3, 0.3);
-  -ms-transform: scale(0.3, 0.3); /* IE 9 */
-  -webkit-transform: scale(0.3, 0.3); /* Safari and Chrome */
-  -o-transform: scale(0.3, 0.3); /* Opera */
-  -moz-transform: scale(0.3, 0.3); /* Firefox */
-}

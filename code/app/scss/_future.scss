@@ -1,5 +1,25 @@
+// Design of the card itself, minified
+.future-feature{
+  padding: 10px;
+  padding-bottom: 20px;
+  font-family: MiloWeb;
+  color: #6b6b6b;
+  border: solid #00a5c9;
+  border-width: 1px;
+  border-radius: 12px;
+  box-shadow: 0.06rem 0.06rem 0.25rem #03566a ;
+  margin-bottom: 20px;
 
+  // The initial state of the future feature cards. They're small.
 
+  transform: scale(0.3, 0.3);
+  -ms-transform: scale(0.3, 0.3); /* IE 9 */
+  -webkit-transform: scale(0.3, 0.3); /* Safari and Chrome */
+  -o-transform: scale(0.3, 0.3); /* Opera */
+  -moz-transform: scale(0.3, 0.3); /* Firefox */
+}
+
+// When it's in-view, they scale to full size
 .future-feature.in-view{
   transform: scale(1.0, 1.0);
   -ms-transform: scale(1.0, 1.0); /* IE 9 */
@@ -9,14 +29,16 @@
 
 }
 
+// The left feature goes first (this is also the date that is closest to now, so it's in "chronological order"
 .left-feature.in-view{
   transition: transform 1s ease-in-out;
   -ms-transition: transform 1s ease-in-out;
-  -webkit-transition: transform 2s ease-in-out;
+  -webkit-transition: transform 1s ease-in-out;
   -o-transition: transform 1s ease-in-out;
   -moz-transition: transform 1s ease-in-out;
 }
 
+// Then the right feature goes 1 second later
 .right-feature.in-view{
   transition: transform 1s ease-in-out 1s;
   -ms-transition: transform 1s ease-in-out 1s;
@@ -25,26 +47,27 @@
   -moz-transition: transform 1s ease-in-out 1s;
 }
 
+
+// Same year styling as in the timeline
 .year-of-future-feature{
   font-family: MiloWeb-Medium;
   color: #03566a;
   font-size: 45px;
 }
 
+// Sets the size of the image in the card
 .near-future-image{
   max-width: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+// Contains the image
 .image-container{
-
   height: 100px;
-
 }
 
+// Not so pretty way to make sure the cards don't touch the timeline
 .filler{
-
   height: 50px;
-
 }
